@@ -13,7 +13,7 @@ html {
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 :root {
@@ -47,14 +47,13 @@ address {
 }
 
 .container {
-margin-left: auto;
-margin-right: auto;
-padding-left: 15px;
-padding-right: 15px;
-width: 1200px;
-outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 1px solid tomato;
 }
-
 
 /* Cтили  страницы index.html*/
 .logo-blue {
@@ -112,7 +111,7 @@ outline: 1px solid tomato;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
+
   color: var(--title-text-color);
 }
 .site-nav .link.current {
@@ -132,7 +131,6 @@ outline: 1px solid tomato;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -270,7 +268,7 @@ outline: 1px solid tomato;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-  
+
   color: #ffffff;
   background-color: #2196f3;
   font-family: Roboto;
@@ -280,7 +278,18 @@ outline: 1px solid tomato;
   text-align: center;
 }
 /* portfolio.html */
+.portfolio-main {
+  padding: 94px 0;
+}
 /* Кнопки фильтры */
+.button-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.navigator-list:not(last-child) {
+  margin-right: 8px;
+}
 .button-navigation .filter {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -288,9 +297,7 @@ outline: 1px solid tomato;
   line-height: 1.62;
   text-align: center;
 }
-.button-navigation {
-  text-align: center;
-}
+
 .button-navigation .filter {
   color: var(--title-text-color);
   background-color: var(--button-fon-color);
@@ -301,8 +308,18 @@ outline: 1px solid tomato;
   background-color: var(--acent-color);
 }
 
-
 /* Портфолио */
+.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% -60px) / 3);
+}
+.list-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.list-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 .portfolio-title {
   color: var(--title-text-color);
   font-weight: 700;
