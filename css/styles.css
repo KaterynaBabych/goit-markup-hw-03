@@ -64,7 +64,7 @@ address {
   line-height: 1.17;
 }
 .logo-white {
-  color: var(--hero-text-color)
+  color: var(--hero-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -100,7 +100,9 @@ address {
 .main-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
+
 /* site nav */
 .site-nav {
   display: flex;
@@ -148,9 +150,9 @@ address {
 /* Контакты */
 .mail {
   color: var(--primary-text-color);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .mail:hover,
@@ -159,9 +161,9 @@ address {
 }
 .tel {
   color: var(--primary-text-color);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .tel:hover,
@@ -208,6 +210,10 @@ address {
 }
 
 /* Cекция Team наша команда */
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -254,6 +260,8 @@ address {
   display: flex;
 }
 .team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   text-align: center;
   color: var(--title-text-color);
   font-weight: 500;
@@ -261,10 +269,16 @@ address {
   line-height: 1.17;
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
+}
+.team-item {
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -281,9 +295,22 @@ address {
 .adress-nav,
 .mailto-nav,
 .tel-nav {
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 }
-
+.mail-footer {
+  color: var(--hero-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.42;
+  letter-spacing: 0.03em;
+}
+.tel-footer {
+  color: var(--hero-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.42;
+  letter-spacing: 0.03em;
+}
 /* кнопка */
 .button-hero {
   display: inline-block;
@@ -336,9 +363,10 @@ address {
 .portfolio-card {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% -60px) / 3);
 }
 .list-card:not(:nth-child(3n)) {
+  /* flex-basis: calc((100% -66px) / 3); */
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 .list-card:not(:nth-last-child(-n + 3)) {
@@ -346,6 +374,7 @@ address {
 }
 .list-card {
   padding-bottom: 20px;
+  /* border: 1px solid #eeeeee; */
 }
 .portfolio-title {
   margin-bottom: 4px;
@@ -366,9 +395,10 @@ address {
 }
 
 .portfolio-nav {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-.img-nav {
-  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 30px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
